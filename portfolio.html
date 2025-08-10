@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prajwal Chaudhary's Portfolio showcasing web development skills and projects.">
+    <meta name="keywords" content="web developer, portfolio, web development, HTML, CSS, JavaScript">
+    <meta name="author" content="Prajwal Chaudhary">
+    <title>Prajwal Chaudhary Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script src="https://kit.fontawesome.com/3f97c6ef35.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="portfolio-title">MyPortfolio</div>
+        <ul>
+            <li><a href="#welcome-section">About</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contacts">Contact</a></li>
+        </ul>    
+    </nav>
+
+    <section id="welcome-section">
+        <div class="first-half">
+            <div class="description">
+                <h1>Hey, I'm Prajwal</h1>
+                <p><span id ="typed"></span></p>
+                <button>Checkout My Resume</button>
+            </div>
+
+        </div>
+        <div class="second-half">
+            <div class="img-container">
+                <img src="Myphoto.png" alt="Photo of Prajwal" width="389px">
+            </div>
+        </div>
+    </section>
+
+    <!-- Qualifications section -->
+    <section id="qualifications">
+        <div id="container">
+            <h1>Academic Qualifications 🎓</h1>
+            <ul>
+                <li>
+                    <img src="TU.png" alt="University Logo" class="qualification-logo">
+                    <div class="qualification-details">
+                        <h3>BE in Computer Engineering</h3>
+                        <p>IOE Thapathali Campus, Tribhuvan University</p>
+                        <p>Graduation: July 2026 <strong>(4th year running)</strong></p>
+                    </div>
+                </li>
+                <li>
+                    <img src="sxc.jpeg" alt="University Logo" class="qualification-logo">
+                    <div class="qualification-details">
+                        <h3>Plus Two (Science)</h3>
+                        <p>St. Xaviers College, Maitighar, kathmandu</p>
+                        <p>completed: June 2019</p>
+                    </div>
+                </li>
+            </ul>
+            
+        </div>
+    
+</section>
+
+    <section id="projects">
+        <h1>Have A Look At My Projects</h1>
+        <hr>
+        <div class="project-container">
+            <!-- Project Tile for Tribute Page -->
+            <div class="project-tile">
+                <div class="project-holder" id="tribute-page">
+                    <div class="project-image"><img src="tribute_page.png" alt="Tribute Page Screenshot"></div>
+                    <div class="project-caption"><span>Tribute Page</span></div>
+                </div>
+            </div>
+
+            <!-- Project Tile for Product Landing Page -->
+            <div class="project-tile">
+                <div class="project-holder" id="product-landing-page">
+                    <div class="project-image"><img src="product-landing-page.png" alt="Product Landing Page Screenshot"></div>
+                    <div class="project-caption"><span>Product Landing Page</span></div>
+                </div>
+            </div>
+
+            <!-- Project Tile for Calculator -->
+            <div class="project-tile">
+                <div class="project-holder" id="calculator">
+                    <div class="project-image"><img src="calculator.png" alt="Calculator Screenshot"></div>
+                    <div class="project-caption"><span><a class="project-title" href="#calculator">Calculator</a></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <h1>Let's Work Together...</h1>
+        <p>How do you take your coffee?</p>
+        <ul>
+            <li>
+                <div>
+                    <i class="fa-brands fa-facebook icons"></i>
+                    <a id="profile-link" href="https://www.facebook.com/prajwal.chaudhary.716" target="_blank">Facebook</a>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                <i class="fa-brands fa-github icons"></i>
+                <a href="https://github.com/prajwal" target="_blank">Github</a>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <i class="fa-brands fa-linkedin icons"></i>
+                    <a href="https://twitter.com/prajwal" target="_blank">LinkedIn</a>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <i class="fa-solid fa-envelope icons"></i>
+                    <a href="mailto:prajwal@example.com">Mail</a>
+                </div>
+            </li>
+            
+        </ul>
+        <hr>
+        <div class="footer">
+            <p>Created By Prajwal Chaudhary</p>
+            <p>All Rights Reserved</p>
+        </div>
+    </section>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var options = {
+    strings: ['CS grad', 'Problem Solver', 'Web Developer', 'Data Science Enthusiast', 'AI/ML Enthusiast'],
+    typeSpeed: 50,
+    backSpeed: 25,
+    loop: true
+  };
+
+  var typed = new Typed('#typed', options);
+});
+</script>
+</body>
+</html>

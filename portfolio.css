@@ -1,0 +1,258 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top:80px;
+}
+
+#navbar{
+    position:sticky;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    height:70px;
+    background-color:#06923E;
+    z-index: 5;
+}
+.portfolio-title{
+    color:#E67514;
+    font-size: 3rem;
+    display:flex;
+    place-items: center;
+    margin-left:4%;
+ 
+}
+#navbar ul{
+    display:flex;
+    list-style: none;
+    align-items: center;
+    margin-right: 4%;
+}
+#navbar ul li{
+    margin:0 25px;
+}
+#navbar ul li a{
+    color:#212121;
+    font-size:20px;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-weight: 600;
+    padding:3px 5px;
+    border-radius: 10px;
+}
+#navbar ul li a:hover{
+    background-color: yellow;
+}
+#welcome-section{
+    margin-top: -70px;
+    height:100vh;
+    background-color:#D3ECCD;
+    line-height: 55px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    z-index: -5;
+}
+.first-half,.second-half{
+    width:50vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.first-half button{
+    padding: 10px 15px;
+    font-size: 20px;
+    background-color: #06923E;
+    margin:20px 20%;
+    border:none;
+    color:white;
+    border-radius:10px;
+    cursor: pointer;
+    transition: padding 0.2s ease-in-out,color 2s ease-in-out,transform 0.2s ease-in-out;
+}
+.first-half button:hover{
+    transform: translateY(5px);
+    padding: 13px 18px;
+}
+
+
+h1{
+    font-size: 3.5em;
+    color:blue;
+    text-align: center;
+    margin-bottom: 8px;
+}
+#welcome-section p{
+    font-size: 2.0em;
+    color:rgb(197, 17, 17);
+    text-align: center;
+}
+#welcome-section span{
+    font-weight: 700;
+    color:#E67514;
+    margin-left: 10px;
+}
+.description{
+    margin-left:30%;
+}
+.second-half .img-container{
+    background-color: #E67514;
+    margin-top:13%;
+    margin-right:5%;
+    border-radius: 80px;
+    height:80%;
+
+}
+
+
+/* Styling for the Academic Qualifications section */
+#qualifications {
+    background-color: #f8f9fa; /* A light, neutral background */
+    padding: 2em; /* Spacing inside the section */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    font-family: Arial, sans-serif;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center; 
+    background-color:#FFF4A4;
+}
+#qualifications h1 {
+    margin-bottom: 0.5em;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5em;
+}
+
+#qualifications ul {
+    list-style-type: none; /* Removes the default bullet points */
+    padding: 0;
+}
+
+#qualifications li {
+    display: flex; /* Aligns children (logo and details) horizontally */
+    align-items: center; /* Vertically centers the items */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-left: 5px solid #007bff; /* A colored line for emphasis */
+    padding: 1.5em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Adds a hover effect */
+}
+
+#qualifications li:hover {
+    transform: translateY(-5px); /* Lifts the item on hover */
+}
+
+.qualification-logo {
+    width: 60px; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 1.5em;
+}
+
+.qualification-details {
+    flex-grow: 1; /* Allows the text div to take up remaining space */
+}
+
+#qualifications h3 {
+    color: #007bff;
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+#qualifications p {
+    color: #666;
+    margin: 0.5em 0;
+}
+
+
+#projects{
+    background-color: cadetblue;
+    padding:35px;
+}
+#projects h1{
+    text-align:center;
+    font-size: 2.5rem;
+    color:white;
+}
+.project-container{
+    display:flex;
+    flex-direction:row;
+    margin:15px 5px;
+}
+.project-holder{
+    padding:5px;
+    margin:20px 60px;
+    height:400px;
+    width:300px;
+    background-color: antiquewhite;
+    border-radius:10px;
+}
+.project-holder .project-image{
+    height:330px;
+    overflow: hidden;
+}
+.project-holder .project-caption{
+    margin:20px 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    color:blue;
+}
+
+#contacts{
+    height:75vh;
+    background-color:#212121;
+    padding:7% 10%;
+    line-height: 45px;
+}
+#contacts h1{
+    text-align:center;
+    font-size:3.5rem;
+    color:#E67514;
+    margin-bottom: 20px;
+}
+#contacts p{
+    text-align: center;
+    font-size: 1.5rem;
+    color:white;
+}
+#contacts ul{
+    
+    list-style:none;
+    display:flex;
+    font-size: 1.8rem;
+    color:white;
+}
+#contacts ul li{
+    margin:25px auto 50px auto;
+    
+}
+#contacts ul li a{
+    text-decoration: none;
+    color:white;
+}
+#contacts hr{
+    color:#06923E;
+    border-width:2px;
+    border-style: solid;
+}
+#contacts .footer{
+    margin-top:20px;
+    display:flex;
+    justify-content: space-between;
+}
+.icons{
+    font-size: 40px;
+}
+
+@media screen and (max-width:900px) {
+    .project-container{
+        flex-wrap:wrap;
+    }
+}
