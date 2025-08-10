@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.parent{
+    width:500px;
+    height:500px;
+    display:flex;
+    background-color: green;
+    align-items: center;
+    justify-content:center;
+    margin: 50px calc(50% - 250px);
+    transform: rotate(45deg);
+    border-radius:250px;
+    animation: rotate 5s linear infinite;
+}
+
+.child1,.child2{
+    position:absolute;
+    background-color: white;
+    width:700px;
+    height:20px;
+    transform: rotate(45deg);
+}
+.child1{
+    transform: rotate(45deg);
+}
+.child2{
+    transform: rotate(-45deg);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
