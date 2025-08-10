@@ -4,7 +4,7 @@
     font-family: Arial;
     box-sizing:border-box;
     scroll-behavior: smooth;
-    scroll-padding-top:80px;
+    scroll-padding-top:70px;
 }
 
 #navbar{
@@ -169,6 +169,8 @@ h1{
     margin: 0.5em 0;
 }
 
+
+
 /*projects section */
 .portfolio-container {
     max-width: 1280px;
@@ -284,7 +286,72 @@ h1{
 }
 
 
+/*skills section*/
+#skills{
+    background: #16610E;
+    margin: 0;
+    padding: 40px 0;
+    color: #fff;
+}
+.skills-section-container {
+    max-width: 900px;
+    margin: 50px auto;
+    background: #FFF4A4;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    animation: fadeInSkills 1s ease-in-out;
+    color: #16610E;
+}
+@keyframes fadeInSkills {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+h2.skills-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #16610E;
+}
+h3.section-subtitle {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #F97A00;
+    padding-bottom: 5px;
+    margin-bottom:40px
+}
+ul.skills-list, ul.learning-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+}
+li.skill-item {
+    background: #FED16A;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+}
+li.skill-item img.skill-icon {
+    max-width: 60%;
+    max-height: 60%;
+}
+li.skill-item:hover {
+    background: #F97A00;
+    transform: scale(1.1);
+}
 
+
+
+/*contacts section*/
 #contacts{
     height:75vh;
     background-color:#212121;
