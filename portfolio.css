@@ -62,23 +62,22 @@
     justify-content: center;
     align-items:center;
 }
-.first-half button{
+.resume-button{
     padding: 10px 15px;
     font-size: 20px;
     background-color: #06923E;
-    margin:20px 20%;
+    margin:25px 20%;
     border:none;
     color:white;
     border-radius:10px;
     cursor: pointer;
-    transition: padding 0.2s ease-in-out,color 2s ease-in-out,transform 0.2s ease-in-out;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out, padding 0.2s ease-in-out;
+    
 }
-.first-half button:hover{
-    transform: translateY(5px);
+.resume-button:hover{
     padding: 13px 18px;
 }
-
-
 h1{
     font-size: 3.5em;
     color:blue;
@@ -89,11 +88,12 @@ h1{
     font-size: 2.0em;
     color:rgb(197, 17, 17);
     text-align: center;
+    margin-bottom: 10px;
 }
 #welcome-section span{
     font-weight: 700;
     color:#E67514;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 .description{
     margin-left:30%;
