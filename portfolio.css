@@ -111,7 +111,7 @@ h1{
 /* Styling for the Academic Qualifications section */
 #qualifications {
     background-color: #f8f9fa; /* A light, neutral background */
-    padding: 2em; /* Spacing inside the section */
+    padding: 3.8em 0; /* Spacing inside the section */
     border-radius: 10px; /* Rounded corners for a softer look */
     font-family: Arial, sans-serif;
     width:100%;
@@ -169,41 +169,121 @@ h1{
     margin: 0.5em 0;
 }
 
+/*projects section */
+.portfolio-container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:90px 20px
+}
+.projects-section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #1f2937;
+}
+.projects-title-underline {
+    height: 0.25rem;
+    width: 6rem;
+    background-color: #2563eb;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    border-radius: 9999px;
+}
+/* Fixed 4-column grid for desktop layout */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem;
+}
 
-#projects{
-    background-color: cadetblue;
-    padding:35px;
-}
-#projects h1{
-    text-align:center;
-    font-size: 2.5rem;
-    color:white;
-}
-.project-container{
-    display:flex;
-    flex-direction:row;
-    margin:15px 5px;
-}
-.project-holder{
-    padding:5px;
-    margin:20px 60px;
-    height:400px;
-    width:300px;
-    background-color: antiquewhite;
-    border-radius:10px;
-}
-.project-holder .project-image{
-    height:330px;
+.project-item-card {
+    position: relative;
     overflow: hidden;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
 }
-.project-holder .project-caption{
-    margin:20px 0;
-    display:flex;
-    justify-content: center;
+
+.project-item-card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.project-item-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.project-item-card:hover img {
+    transform: scale(1.1);
+}
+
+.project-item-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    font-size: 1.3rem;
-    color:blue;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
+
+.project-item-card:hover .project-item-overlay {
+    opacity: 1;
+}
+
+.project-item-title {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.project-item-link {
+    padding: 0.75rem 1.5rem;
+    background-color: white;
+    color: #1f2937;
+    font-weight: 700;
+    border-radius: 9999px;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.project-item-link:hover {
+    background-color: #2563eb;
+    color: white;
+}
+
+.projects-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.see-all-projects-btn {
+    padding: 1rem 2rem;
+    background-color: #2563eb;
+    color: white;
+    font-weight: 700;
+    border-radius: 9999px;
+    font-size: 1.125rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.see-all-projects-btn:hover {
+    background-color: #1e40af;
+}
+
+
 
 #contacts{
     height:75vh;
