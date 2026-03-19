@@ -15,12 +15,18 @@
 <body>
     <nav id="navbar">
         <div class="portfolio-title">MyPortfolio</div>
-        <ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul id="nav-menu">
             <li><a href="#welcome-section">About</a></li>
             <li><a href="#qualifications">Academics</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">skills</a></li>
-            <li><a href="#contacts">Contact</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./admin.html">admin</a></li>
         </ul>    
     </nav>
 
@@ -37,7 +43,7 @@
         </div>
         <div class="second-half">
             <div class="img-container">
-                <img src="Myphoto.png" alt="Photo of Prajwal" width="389px">
+                <img src="Myphoto.png" alt="Photo of Prajwal" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
         </div>
     </section>
@@ -187,6 +193,24 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
   var typed = new Typed('#typed', options);
+  
+  // Hamburger menu functionality
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+  
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+  });
+  
+  // Close menu when a link is clicked
+  const navLinks = navMenu.querySelectorAll('a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navMenu.classList.remove('active');
+    });
+  });
 });
 </script>
 <script src="skills-section.js"></script>

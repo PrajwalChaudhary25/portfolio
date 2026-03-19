@@ -30,6 +30,34 @@
     align-items: center;
     margin-right: 4%;
 }
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #212121;
+    margin: 5px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
 #navbar ul li{
     margin:0 25px;
 }
@@ -401,5 +429,329 @@ li.skill-item:hover {
 @media screen and (max-width:900px) {
     .project-container{
         flex-wrap:wrap;
+    }
+}
+
+/* Tablet and smaller screens (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    #navbar ul li {
+        margin: 0 15px;
+    }
+    
+    #navbar ul li a {
+        font-size: 16px;
+    }
+    
+    .portfolio-title {
+        font-size: 2rem;
+    }
+    
+    #welcome-section {
+        flex-direction: column-reverse;
+        gap: 40px;
+        height: auto;
+        padding: 40px 20px;
+    }
+    
+    .first-half, .second-half {
+        width: 100%;
+        height: auto;
+    }
+    
+    .description {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    #welcome-section p {
+        font-size: 1.5em;
+    }
+    
+    .second-half .img-container {
+        margin-right: 0;
+        margin-top: 30px;
+        width: 300px;
+        height: 300px;
+    }
+    
+    .second-half .img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    
+    #qualifications li {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .qualification-logo {
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+}
+
+/* Mobile screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    * {
+        font-size: 14px;
+    }
+    
+    #navbar {
+        flex-direction: row;
+        height: auto;
+        padding: 10px;
+        position: relative;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .portfolio-title {
+        font-size: 1.5rem;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    
+    #navbar ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #06923E;
+        flex-direction: column;
+        margin-right: 0;
+        gap: 0;
+        display: none;
+        padding: 20px;
+        z-index: 999;
+    }
+    
+    #navbar ul.active {
+        display: flex;
+    }
+    
+    #navbar ul li {
+        margin: 5px 0;
+    }
+    
+    #navbar ul li a {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+    
+    #welcome-section {
+        margin-top: 0;
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 2em;
+        line-height: 1.2;
+    }
+    
+    #welcome-section p {
+        font-size: 1.2em;
+    }
+    
+    #welcome-section span {
+        margin-left: 0;
+    }
+    
+    .resume-button {
+        margin: 15px auto;
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+    
+    .second-half .img-container {
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+    }
+    
+    .second-half .img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 80px;
+    }
+    
+    #qualifications {
+        padding: 2em 1em;
+    }
+    
+    #qualifications h1 {
+        font-size: 1.8em;
+    }
+    
+    .qualification-logo {
+        width: 50px;
+    }
+    
+    .portfolio-container {
+        padding: 40px 15px;
+    }
+    
+    .projects-section-title {
+        font-size: 2em;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .project-item-card {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .project-item-title {
+        font-size: 1rem;
+    }
+    
+    .project-item-link {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .skills-section-container {
+        margin: 20px 15px;
+        padding: 15px;
+    }
+    
+    h2.skills-title {
+        font-size: 1.8rem;
+    }
+    
+    h3.section-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    ul.skills-list, ul.learning-list {
+        gap: 10px;
+    }
+    
+    li.skill-item {
+        width: 80px;
+        height: 80px;
+    }
+    
+    #contacts {
+        height: auto;
+        padding: 40px 20px;
+    }
+    
+    #contacts h1 {
+        font-size: 2em;
+    }
+    
+    #contacts p {
+        font-size: 1.1rem;
+    }
+    
+    #contacts ul {
+        flex-direction: column;
+        font-size: 1.2rem;
+    }
+    
+    #contacts ul li {
+        margin: 15px auto;
+    }
+    
+    #contacts .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .icons {
+        font-size: 30px;
+    }
+}
+
+/* Small mobile screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    * {
+        font-size: 12px;
+    }
+    
+    #navbar {
+        padding: 8px;
+    }
+    
+    .portfolio-title {
+        font-size: 1.2rem;
+    }
+    
+    #navbar ul li a {
+        font-size: 12px;
+        padding: 3px 5px;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    
+    #welcome-section p {
+        font-size: 1em;
+    }
+    
+    .resume-button {
+        font-size: 14px;
+        padding: 6px 10px;
+        margin: 10px auto;
+    }
+    
+    .second-half .img-container {
+        width: 150px;
+        height: 150px;
+    }
+    
+    #qualifications h1 {
+        font-size: 1.5em;
+    }
+    
+    .projects-section-title {
+        font-size: 1.5em;
+    }
+    
+    .project-item-title {
+        font-size: 0.9rem;
+    }
+    
+    h2.skills-title {
+        font-size: 1.5rem;
+    }
+    
+    li.skill-item {
+        width: 70px;
+        height: 70px;
+    }
+    
+    #contacts h1 {
+        font-size: 1.5em;
+    }
+    
+    #contacts p {
+        font-size: 1rem;
+    }
+    
+    .icons {
+        font-size: 25px;
     }
 }
